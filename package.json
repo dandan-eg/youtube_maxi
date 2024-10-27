@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.14"
+  },
+    "scripts": {
+  "start": "npm-run-all --parallel watch:css serve",
+  "watch:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+  "serve": "live-server ./dist"
+}
+}
